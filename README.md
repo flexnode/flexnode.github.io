@@ -1,2 +1,3 @@
-# flexnode.github.io
-Flexnode Team Site
+# Flexnode Team Site
+
+Redesigned of flexnode.com
