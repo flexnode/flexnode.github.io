@@ -1,0 +1,247 @@
+/* Base */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  color: #82837E;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2, h3 {
+  margin: 0;
+  font-family: 'PT Serif', serif;
+  color: #424242;
+}
+
+/* Navigation */
+
+.navTop {
+  position: fixed;
+  color: #F2F2F2;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  padding: 0 10px 0 20px;
+  width: 100%;
+}
+
+.navTop.is-translucent {
+  background-color: rgba(50,153,187,0.8);
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.navTop a {
+  color: #F2F2F2;
+  text-decoration: none;
+}
+
+.navTop .navTop-links {
+  float: right;
+  height: 50px;
+  text-align: right;
+}
+
+.navTop-links a {
+  float: left;
+  display: inline-block;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #F2F2F2;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.navTop-links a:hover {
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* Content Container */
+
+.contentContainer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 40px 80px 40px;
+}
+
+/* Content Separator */
+.contentSeparator {
+  margin-bottom: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.contentSeparator .box {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #3299BB;
+}
+
+.box.box-top {
+  margin-bottom: 10px;
+}
+
+.box.box-bottom {
+  margin-top: 10px;
+}
+
+/* Cover */
+
+#cover.contentBlock {
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  box-shadow: 0 0 5px #424242;
+  margin-bottom: 50px;
+}
+
+#cover .contentContainer {
+  background-color: rgba(0,0,0,0.4);
+  padding: 200px 30px;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+#cover h1 {
+  margin: 0;
+  color: #F2F2F2;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  text-shadow: 0 0 8px #424242;
+  font-weight: normal;
+  font-family: 'Petit Formal Script', cursive;
+}
+
+#cover h2 {
+  margin: 0;
+  color: #F2F2F2;
+  font-size: 48px;
+  text-align: center;
+  text-shadow: 2px 2px 5px #424242;
+}
+
+#cover .arrowDown {
+  display: inline-block;
+  margin: 20px;
+  background-color: #3299BB;
+  border-radius: 46px;
+  height: 46px;
+  width: 46px;
+}
+
+.arrowDown span {
+  display: block;
+  margin: 20px auto;
+  width: 8px;
+  height: 8px;
+  border-left: 8px solid #3299BB;
+  border-right: 8px solid #3299BB;
+  border-top: 8px solid #F2F2F2;
+}
+
+#cover .arrowDown:hover {
+  background-color: #F2F2F2;
+}
+
+.arrowDown:hover span {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #3299BB;
+}
+
+.contentContainer h3 {
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Why */
+
+#why p {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: 'PT Serif', serif;
+}
+
+#why p:last-child {
+  margin-bottom: 0;
+}
+
+#how ol.manifestoList {
+  margin: 0;
+  padding: 0;
+}
+
+ol.manifestoList li.manifestoList-item {
+  margin: 0 0 40px 0;
+  list-style: none;
+  font-family: 'PT Serif', serif;
+  color: #82837E;
+}
+
+ol.manifestoList li.manifestoList-item:last-child {
+  margin-bottom: 0;
+}
+
+li.manifestoList-item .manifestoList-number {
+  float: left;
+  display: block;
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 48px;
+  line-height: 48px;
+  color: #3299BB;
+}
+
+.manifestoList-desc {
+  margin-left: 60px;
+}
+
+.manifestoList-desc h4 {
+  margin: 0 0 8px 0;
+  padding: 0;
+  font-size: 28px;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 32px;
+  color: #424242;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 480px) {
+  .navTop-links a {
+    padding: 0 8px;
+    font-size: 14px;
+  }
+
+  .contentContainer,
+  #why .contentContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #why h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  #why h2 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
