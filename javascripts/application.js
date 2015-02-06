@@ -2,9 +2,11 @@ $(document).ready(function() {
 
   // Make navbar translucent when not on cover
   $(window).scroll(function (event) {
-    var scroll_position = $(window).scrollTop();
-    var cover_height = $("#cover").height();
-    if (scroll_position + 50 > cover_height) {
+    var scrollPosition = $(window).scrollTop();
+    var coverHeight = $("#cover").height();
+    var navbarHeight = $(".navTop").height();
+
+    if (scrollPosition + navbarHeight > coverHeight) {
       $(".navTop").addClass("is-translucent");
     } else {
       $(".navTop").removeClass("is-translucent");
@@ -13,14 +15,15 @@ $(document).ready(function() {
 
   // Show which section is looking at on navbar
   $(window).scroll(function (event) {
-    var scroll_position = $(window).scrollTop();
+    var scrollPosition = $(window).scrollTop();
+    var navbarHeight = $(".navTop").height();
 
     $(".navTop a").each(function(index) {
       var anchor = $($(this).attr("href"));
-      var anchor_top = anchor.offset().top - 50;
-      var anchor_bottom = anchor_top + anchor.height() -1;
+      var anchorTop = anchor.offset().top - navbarHeight;
+      var anchorBottom = anchorTop + anchor.height() -1;
 
-      if (scroll_position >= anchor_top && scroll_position <= anchor_bottom) {
+      if (scrollPosition >= anchorTop && scrollPosition <= anchorBottom) {
         $(this).addClass("is-active");
       } else {
         $(this).removeClass("is-active");
@@ -34,7 +37,7 @@ $(document).ready(function() {
   $(".js-scroll-to").click(function (event) {
     event.preventDefault();
     var anchor = $($(event.currentTarget).attr("href"));
-    $("html, body").animate({ scrollTop: anchor.offset().top - 50 }, 1000);
+    $("html, body").animate({ scrollTop: anchor.offset().top - 50 }, 800);
     $(window).scroll();
   });
 

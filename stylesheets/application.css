@@ -28,6 +28,10 @@ h2, h3 {
   font-size: 24px;
   padding: 0 10px 0 0;
   width: 100%;
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .navTop.is-translucent {
@@ -67,10 +71,18 @@ h2, h3 {
   letter-spacing: 2px;
   font-weight: bold;
   padding: 0 10px;
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .navTop-links a.is-active {
   background-color: rgba(0,0,0,0.3);
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .navTop-links a:hover {
@@ -180,6 +192,7 @@ h2, h3 {
   line-height: 48px;
   text-align: center;
   margin-bottom: 40px;
+  text-shadow: 1px 1px 1px #BCBCBC;
 }
 
 /* Why */
@@ -193,6 +206,8 @@ h2, h3 {
 #why p:last-child {
   margin-bottom: 0;
 }
+
+/* How */
 
 #how ol.manifestoList {
   margin: 0;
@@ -232,9 +247,47 @@ li.manifestoList-item .manifestoList-number {
   color: #424242;
 }
 
+/* Who */
+
+.teamMemberList {
+  margin: auto;
+  overflow: auto;
+  zoom: 1;
+}
+
+.teamMemberList:after {
+  clear:both;
+}
+
+.teamMember {
+  float: left;
+  width: 200px;
+  margin: 0 20px 40px 0;
+  text-align: center;
+}
+
+.teamMember h5 {
+  font-family: 'PT Serif', serif;
+  font-size: 24px;
+  margin: 10px 0 20px;
+  color: #3299BB;
+}
+
+.teamMember:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+img.teamMember-avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  object-fit: cover;
+  border: 3px solid #E9E9E9;
+}
+
 /* Responsive Styles */
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .navTop-links a {
     padding: 0 8px;
     font-size: 14px;
@@ -255,4 +308,38 @@ li.manifestoList-item .manifestoList-number {
     font-size: 40px;
     line-height: 60px;
   }
+
+  #who .teamMemberList {
+    width: 100%;
+  }
+
+  #who .teamMember {
+    width: 100%;
+  }
+
+  #who .teamMember:nth-child(3n+3) {
+    margin-right: 0;
+  }
+
+  #who .teamMember:nth-child(2n+2) {
+    margin-right: 0;
+  }
 }
+
+@media only screen and (min-width: 480px) and (max-width: 720px) {
+
+  #who .teamMemberList {
+    width: 420px;
+  }
+
+  #who .teamMember:nth-child(3n+3) {
+    margin-right: 20px;
+  }
+
+  #who .teamMember:nth-child(2n+2) {
+    margin-right: 0;
+  }
+
+}
+
+
