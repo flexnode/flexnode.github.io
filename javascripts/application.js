@@ -20,9 +20,6 @@ $(document).ready(function() {
       var anchor_top = anchor.offset().top - 50;
       var anchor_bottom = anchor_top + anchor.height() -1;
 
-      console.log(anchor_top);
-      console.log(anchor_bottom);
-
       if (scroll_position >= anchor_top && scroll_position <= anchor_bottom) {
         $(this).addClass("is-active");
       } else {
@@ -37,7 +34,7 @@ $(document).ready(function() {
   $(".js-scroll-to").click(function (event) {
     event.preventDefault();
     var anchor = $($(event.currentTarget).attr("href"));
-    $("html, body").animate({ scrollTop: anchor.offset().top - 50 });
+    $("html, body").animate({ scrollTop: anchor.offset().top - 50 }, 1000);
     $(window).scroll();
   });
 
