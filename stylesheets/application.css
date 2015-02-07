@@ -257,6 +257,7 @@ li.manifestoList-item .manifestoList-number {
 
 .teamMemberList {
   margin: auto;
+  padding-bottom: 20px;
   overflow: auto;
   zoom: 1;
 }
@@ -275,11 +276,12 @@ li.manifestoList-item .manifestoList-number {
 .teamMember h5 {
   font-family: 'PT Serif', serif;
   font-size: 24px;
-  margin: 10px 0 20px;
+  margin: 10px 0;
   color: #3299BB;
 }
 
 .teamMember p {
+  margin: 0;
   line-height: 30px;
 }
 
