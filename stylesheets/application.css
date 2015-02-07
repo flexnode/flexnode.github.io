@@ -121,6 +121,10 @@ h2, h3 {
   margin-top: 10px;
 }
 
+.box.box-blank {
+  background-color: transparent;
+}
+
 /* Cover */
 
 #cover.contentBlock {
@@ -247,6 +251,71 @@ li.manifestoList-item .manifestoList-number {
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 32px;
   color: #424242;
+}
+
+/* What */
+
+#what .projectContainer {
+  margin-bottom: 40px;
+  background-color: #F2F2F2;
+  background-size: cover;
+  background-position: top center;
+  border-radius: 5px;
+}
+
+#what .contentContainer .projectContainer:last-child {
+  margin-bottom: 0;
+}
+
+#what a.project {
+  display: block;
+  position: relative;
+  background-color: rgba(0,0,0,0.2);
+  height: 300px;
+  width: 100%;
+  border-radius: 5px;
+  border: 3px solid #E9E9E9;
+  text-decoration: none;
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+#what a.project:hover {
+  background-color: rgba(0,0,0,0);
+  border-color: #3299BB;
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.project-info {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+  width: 100%;
+  padding: 20px;
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.project-info h5 {
+  margin: 0;
+  font-family: 'PT Serif', serif;
+  font-size: 24px;
+  color: #F2F2F2;
+  text-shadow: 0 0 8px #424242;
+}
+
+.project-info p {
+  font-size: 16px;
+  margin: 0;
+  color: #F2F2F2;
+  text-shadow: 0 0 8px #424242;
 }
 
 /* Who */
