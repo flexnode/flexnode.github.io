@@ -381,11 +381,11 @@ img.teamMember-avatar {
 .footerBottom {
   width: 100%;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .footerBottom h5 {
-  margin: 40px 0 20px 0;
+  margin: 30px 0;
   font-family: 'PT Serif', serif;
   font-weight: normal;
   font-size: 20px;
@@ -408,7 +408,7 @@ img.teamMember-avatar {
 }
 
 .footerBottom p {
-  margin: 40px 0 0 0;
+  margin: 30px 0 0 0;
   font-size: 16px;
   color: #E9E9E9;
 }
