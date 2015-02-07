@@ -135,7 +135,7 @@ h2, h3 {
 
 #cover .contentContainer {
   background-color: rgba(0,0,0,0.4);
-  padding: 200px 30px;
+  padding: 150px 30px;
   width: 100%;
   max-width: 100%;
   text-align: center;
@@ -251,6 +251,10 @@ li.manifestoList-item .manifestoList-number {
 
 /* Who */
 
+#who .contentContainer {
+  padding-bottom: 0;
+}
+
 .teamMemberList {
   margin: auto;
   overflow: auto;
@@ -298,9 +302,35 @@ img.teamMember-avatar {
 /* Footer Bottom */
 .footerBottom {
   width: 100%;
-  height: 300px;
-  background-color: #3299BB;
+  /*background-color: #82837E;
+  box-shadow: 0 0 5px #424242;*/
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.footerBottom h5 {
+  font-weight: normal;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: #F2F2F2;
+  background-color: rgba(50,153,187,0.8);
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
   box-shadow: 0 0 5px #424242;
+}
+
+.button:hover {
+  color: #E9E9E9;
+  background-color: #3299BB;
 }
 
 /* Responsive Styles */
@@ -311,18 +341,26 @@ img.teamMember-avatar {
     font-size: 14px;
   }
 
+  .navTop .navTop-logo {
+    padding: 0 5px;
+  }
+
+  .navTop-logo img {
+    padding: 5px 0;
+  }
+
   .contentContainer,
-  #why .contentContainer {
+  #cover .contentContainer{
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  #why h1 {
+  #cover h1 {
     font-size: 20px;
     line-height: 30px;
   }
 
-  #why h2 {
+  #cover h2 {
     font-size: 40px;
     line-height: 60px;
   }
@@ -345,6 +383,12 @@ img.teamMember-avatar {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 720px) {
+
+  .contentContainer,
+  #cover .contentContainer{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   #who .teamMemberList {
     width: 420px;
