@@ -29,6 +29,8 @@ h2, h3 {
   padding: 0 10px 0 0;
   width: 100%;
   opacity: 0;
+  box-shadow: 0 0 1px #424242;
+  z-index: 800;
   -moz-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
@@ -133,7 +135,7 @@ h2, h3 {
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
-  box-shadow: 0 0 5px #424242;
+  box-shadow: 0 0 1px #424242;
   margin-bottom: 50px;
 }
 
@@ -297,6 +299,7 @@ li.manifestoList-item .manifestoList-number {
   background-color: rgba(0,0,0,0.6);
   width: 100%;
   padding: 20px;
+  z-index: 500;
   -moz-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
@@ -396,7 +399,6 @@ img.teamMember-avatar {
   font-size: 16px;
   font-family: 'PT Serif', serif;
   font-weight: bold;
-  box-shadow: 0 0 5px #424242;
 }
 
 .button:hover {
