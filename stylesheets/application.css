@@ -134,13 +134,13 @@ h2, h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center center;
+  background-position: bottom center;
   box-shadow: 0 0 1px #424242;
   margin-bottom: 50px;
 }
 
 #cover .contentContainer {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.2);
   padding: 150px 30px;
   width: 100%;
   max-width: 100%;
