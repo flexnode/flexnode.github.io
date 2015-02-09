@@ -136,6 +136,7 @@ h2, h3 {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-attachment: fixed;
   background-position: bottom center;
   box-shadow: 0 0 1px #424242;
   margin-bottom: 50px;
@@ -417,13 +418,12 @@ img.teamMember-avatar {
 
 /* Responsive Styles */
 
-@media only screen and (min-width: 768px) {
-  #cover.contentBlock {
-    background-attachment: fixed;
-  }
-}
-
 @media only screen and (max-width: 480px) {
+
+  body {
+    -webkit-background-size: 1200px 750px;
+  }
+
   .navTop-links a {
     padding: 0 8px;
     font-size: 14px;
@@ -471,6 +471,10 @@ img.teamMember-avatar {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 720px) {
+
+  body {
+    -webkit-background-size: 1200px 750px;
+  }
 
   .contentContainer,
   #cover .contentContainer{
