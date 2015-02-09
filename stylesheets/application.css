@@ -136,14 +136,14 @@ h2, h3 {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-position: bottom center;
+  background-position: center center;
   box-shadow: 0 0 1px #424242;
   margin-bottom: 50px;
   box-sizing: content-box;
 }
 
 #cover .contentContainer {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.3);
   padding: 150px 30px;
   width: 100%;
   max-width: 100%;
@@ -351,6 +351,19 @@ li.manifestoList-item .manifestoList-number {
 .teamMember h5 {
   font-size: 24px;
   margin: 10px 0;
+  color: #424242;
+}
+
+.teamMember h5 a {
+  color: #424242;
+  text-decoration: none;
+}
+
+.teamMember h5 a:hover {
+  text-decoration: underline;
+}
+
+.teamMember h5 a:visited {
   color: #424242;
 }
 
