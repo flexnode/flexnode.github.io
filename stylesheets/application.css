@@ -101,6 +101,12 @@ h2, h3 {
   padding: 40px 40px 80px 40px;
 }
 
+.contentContainer.is-full-width {
+  max-width: 100%;
+  width: 100%;
+  padding: 40px 0 80px 0;
+}
+
 /* Content Separator */
 .contentSeparator {
   margin-bottom: 20px;
@@ -261,25 +267,38 @@ li.manifestoList-item .manifestoList-number {
 /* What */
 
 #what .projectContainer {
-  margin-bottom: 40px;
-  background-color: #F2F2F2;
-  background-size: cover;
-  background-position: top center;
+  background-color: #E9E9E9;
   border-radius: 5px;
+}
+
+.projectContainer.is-inverted img.project-screenshot {
+  float: right;
+}
+
+.projectContainer.is-inverted .projectInfoContainer {
+  margin: 0 50% 0 0;
 }
 
 #what .contentContainer .projectContainer:last-child {
   margin-bottom: 0;
 }
 
-#what a.project {
-  display: block;
-  position: relative;
-  background-color: rgba(0,0,0,0.2);
+img.project-screenshot {
+  float: left;
+  width: 50%;
   height: 300px;
-  width: 100%;
+  object-fit: cover;
+  object-position: top left;
+}
+
+#what a.project-button {
+  display: inline-block;
+  padding: 5px 10px;
   border-radius: 5px;
-  border: 3px solid #E9E9E9;
+  font-size: 16px;
+  color: #3299BB;
+  border: 3px solid #3299BB;
+  text-transform: uppercase;
   text-decoration: none;
   -moz-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
@@ -287,41 +306,43 @@ li.manifestoList-item .manifestoList-number {
   transition: all 0.3s ease-in;
 }
 
-#what a.project:hover {
-  background-color: rgba(0,0,0,0);
-  border-color: #3299BB;
+#what a.project-button:hover {
+  background-color: #3299BB;
+  color: #F2F2F2;
   -moz-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+}
+
+.projectInfoContainer {
+  margin-left: 50%;
+  width: 50%;
+  padding: 20px;
+  height: 300px;
+  text-align: center;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .project-info {
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.6);
-  width: 100%;
-  padding: 20px;
-  z-index: 500;
-  -moz-transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .project-info h5 {
-  margin: 0;
+  margin: 0 0 10px 0;
   font-size: 24px;
-  color: #F2F2F2;
-  text-shadow: 0 0 8px #424242;
 }
 
 .project-info p {
-  margin: 0;
+  margin: 0 0 20px 0;
   font-family: 'PT Serif', serif;
   font-size: 16px;
-  color: #F2F2F2;
-  text-shadow: 0 0 8px #424242;
 }
 
 /* Who */
@@ -480,6 +501,17 @@ img.teamMember-avatar {
 
   #who .teamMember:nth-child(2n+2) {
     margin-right: 0;
+  }
+
+  #what .project-screenshot {
+    float: none;
+    width: 100%;
+  }
+
+  #what .projectInfoContainer {
+    width: 100%;
+    margin: 0;
+    height: 200px;
   }
 }
 
