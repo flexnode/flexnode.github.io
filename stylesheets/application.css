@@ -136,7 +136,6 @@ h2, h3 {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-attachment: fixed;
   background-position: bottom center;
   box-shadow: 0 0 1px #424242;
   margin-bottom: 50px;
