@@ -295,7 +295,8 @@ img.project-screenshot {
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 16px;
-  color: #3299BB;
+  background-color: #3299BB;
+  color: #F2F2F2;
   border: 1px solid #3299BB;
   text-transform: uppercase;
   text-decoration: none;
@@ -306,8 +307,8 @@ img.project-screenshot {
 }
 
 #what a.project-button:hover {
-  background-color: #3299BB;
-  color: #F2F2F2;
+  background-color: transparent;
+  color: #3299BB;
   -moz-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
