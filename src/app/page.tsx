@@ -14,6 +14,7 @@ import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import imageLim from '@/images/team/ts-lim.jpg'
 import imageJohn from '@/images/team/john.jpg'
+import imageVishen from '@/images/clients/mindvalley/vishen.jpg'
 import logoMindvalley from '@/images/clients/mindvalley/logo.png'
 import logoSays from '@/images/clients/says/logo.png'
 import logoRadionyx from '@/images/clients/radionyx/logo.png'
@@ -328,11 +329,16 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Mindvalley', logo: logoMindvalley }}
+        client={{
+          name: 'Vishen Lakhiani',
+          title: 'CEO of Mindvalley',
+          avatar: imageVishen,
+        }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
+        For over a decade, Lim and John played a pivotal role in shaping
+        Mindvalley’s platforms. They brings the same expertise and reliability
+        to any project they take on. If you’re serious about building products
+        that last, they’re the team you want.
       </Testimonial>
 
       <Services />
