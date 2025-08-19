@@ -336,9 +336,9 @@ export default async function Home() {
         }}
       >
         For over a decade, Lim and John played a pivotal role in shaping
-        Mindvalley’s platforms. They brings the same expertise and reliability
-        to any project they take on. If you’re serious about building products
-        that last, they’re the team you want.
+        Mindvalley’s platforms. They bring the same expertise and reliability to
+        any project they take on. If you’re serious about building products that
+        last, they’re the team you want.
       </Testimonial>
 
       <Services />
