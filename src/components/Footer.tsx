@@ -98,10 +98,14 @@ export function Footer() {
         </div>
         <div className="mt-24 mb-20 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
           <Link href="/" aria-label="Home">
-            <Logo className="h-8" fillOnHover />
+            <span className="font-display text-3xl font-medium tracking-tight text-balance text-sky-700">
+              Flexnode
+            </span>
           </Link>
-          <p className="text-sm text-neutral-700">
-            © Flexnode Solutions - {new Date().getFullYear()}
+          <p className="text-sm text-neutral-700 md:text-right">
+            Flexnode Solutions © {new Date().getFullYear()}
+            <br />
+            Company Reg No: 64831T
           </p>
         </div>
       </FadeIn>
