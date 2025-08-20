@@ -5,8 +5,8 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Flexnode Solutions',
-    default: 'Flexnode Solutions - We build and scale products that matter',
+    template: '%s - Flexnode',
+    default: 'Flexnode - We build and scale products that matter',
   },
 }
 
