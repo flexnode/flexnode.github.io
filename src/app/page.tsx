@@ -24,12 +24,14 @@ import { RootLayout } from '@/components/RootLayout'
 
 function Expertise() {
   return (
-    <div className="mt-24 rounded-4xl bg-sky-800 py-24 sm:mt-32 lg:mt-40 lg:py-32">
+    <div
+      id="our-expertise"
+      className="mt-24 rounded-4xl bg-sky-800 py-24 sm:mt-32 lg:mt-40 lg:py-32"
+    >
       <SectionIntro
         eyebrow="Our expertise"
         title="Blending strategy, product, and architecture to help ideas scale."
         invert
-        id="our-expertise"
       >
         <p>
           We bring together more than a decade of hands-on experience to guide,
