@@ -14,6 +14,7 @@ import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import imageLim from '@/images/team/ts-lim.jpg'
 import imageJohn from '@/images/team/john.jpg'
+import imagePhidias from '@/images/team/phidias.jpg'
 import imageVishen from '@/images/clients/mindvalley/vishen.jpg'
 import logoMindvalley from '@/images/clients/mindvalley/logo.png'
 import logoSays from '@/images/clients/says/logo.png'
@@ -198,6 +199,11 @@ const team = [
         name: 'John Wong',
         role: 'Co-Founder',
         image: { src: imageJohn },
+      },
+      {
+        name: 'Phidias Lo',
+        role: 'Product Engineer',
+        image: { src: imagePhidias },
       },
     ],
   },
