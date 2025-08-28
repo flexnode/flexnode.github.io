@@ -45,7 +45,7 @@ function ChatUIScript() {
                 "avatarBorderRadius": 25,
                 "messageBorderRadius": 6,
                 "showTitle": true,
-                "title": "Radiance Dental",
+                "title": "Radiance Dental Clinic",
                 "titleAvatarSrc": "https://www.svgrepo.com/show/506340/tooth.svg",
                 "avatarSize": 40,
                 "welcomeMessage": "Hi, I'm from Radiance Dental. How can I help you?",
