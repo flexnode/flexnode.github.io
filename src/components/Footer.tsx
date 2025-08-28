@@ -10,10 +10,10 @@ const navigation = [
   {
     title: 'About Us',
     links: [
-      { title: 'Our Expertise', href: '#our-expertise' },
-      { title: 'Our Clients', href: '#our-clients' },
-      { title: 'Our Team', href: '#our-team' },
-      { title: 'Our Services', href: '#our-services' },
+      { title: 'Our Expertise', href: '/#our-expertise' },
+      { title: 'Our Clients', href: '/#our-clients' },
+      { title: 'Our Team', href: '/#our-team' },
+      { title: 'Our Services', href: '/#our-services' },
     ],
   },
   {
